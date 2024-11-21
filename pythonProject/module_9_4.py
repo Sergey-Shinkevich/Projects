@@ -5,8 +5,8 @@ print(list(map(lambda x, y: x == y, first, second)))
 
 # Замыкание:
 def get_advanced_writer(file_name):
-    file = open(file_name, 'w', encoding='utf-8')
     def write_everything(*data_set):
+        file = open(file_name, 'w', encoding='utf-8')
         for i in data_set:
             file.write(str(i)+ "\n")
         file.close()
